@@ -8,6 +8,7 @@ public class App {
         datos.ingresarDatos(sc);
         datos.operacion();
         datos.resultado();
+        System.out.println("FIN");
   
     }
 }
