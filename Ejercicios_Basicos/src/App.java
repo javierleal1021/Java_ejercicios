@@ -9,12 +9,15 @@ public class App {
         datos.operacion();
         datos.resultado();*/
 
-        Eje2 datos2 = new Eje2();
+        /*Eje2 datos2 = new Eje2();
         datos2.incio(sc);
         datos2.ejecutar();
-        datos2.resultado();
+        datos2.resultado();*/
 
-        
+        /*Eje3 datos3 = new Eje3();
+        datos3.inicio(sc);
+        datos3.proceso(sc);
+        datos3.resultado();*/
   
     }
 }
