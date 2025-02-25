@@ -1,21 +1,20 @@
 public class AbsVehiculo {
     private static String placa;
     private static String modelo;
-    private String color;
+    private static String color;
 
-    public AbsVehiculo(String datoPlaca, String datoModelo, String datoColor){
+    public AbsVehiculo(String datoPlaca, String datoModelo){
         AbsVehiculo.placa = datoPlaca;
         AbsVehiculo.modelo = datoModelo;
-        this.color = datoColor;
+        
     }
 
-    public void setcolor (String datoColor){
-        this.color = datoColor;
+    public static void setcolor (String datoColor){
+        color = datoColor;
     }
 
     public String getcolor (){
-        String auxColor = this.color;
-        return auxColor;
+        return color;
     }
 
     public void imprimirDatos (){
