@@ -29,10 +29,10 @@ public class App {
         datos5.proceso();
         datos5.resultado();*/
 
-        Eje6 datos6 = new Eje6();
+        /*Eje6 datos6 = new Eje6();
         datos6.incio(sc);
         datos6.proceso(sc);
-        datos6.resultado();
+        datos6.resultado();*/
 
 
     }
