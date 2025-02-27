@@ -9,7 +9,7 @@ public class App {
         do {
         System.out.println("Bienvenido al juego FIZZ BUZZ");
         System.out.println("Para iniciar, registre su nombre por favor");
-        String nombre = sc.next();
+        String nombre = sc.nextLine();
         Usuario objUsuario = new Usuario(nombre);
         System.out.println("Acontinuacion ingresa dos numeros para construir el rango en el que deseas jugar");
         System.out.println("Ingresa el numero donde quieres que inicie el rango");
@@ -21,10 +21,6 @@ public class App {
         System.out.println("Ahora ingresa el segundo numero para evaluar (BUZZ)");
         objNumero.setNum2(sc);
         System.out.println("Iniciando juego...");
-        objNumero.getNum1();
-        objNumero.getNum2();
-        objNumero.getRango1();
-        objNumero.getRango2();
 
         Juego objJuego = new Juego(objUsuario.getNombre(),objNumero);
         objJuego.fizzBuzz();
@@ -33,6 +29,7 @@ public class App {
         System.out.println("Ingrese 1 para iniciar el juego");
         System.out.println("Ingrese 2 para salir del juego");
         opcion = sc.nextInt();
+        sc.nextLine();
 
     } while (opcion == 1);
         System.out.println("FIN DEL JUEGO");    
