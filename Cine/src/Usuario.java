@@ -29,7 +29,7 @@ public class Usuario extends Persona{
 
             System.out.println("¿Desea reservar más ASIENTOS?");
             System.out.println("1 - Sí");
-            System.out.println("2 - No, finalizar reserva");
+            System.out.println("2 - No");
             opcion = sc.nextInt();
     }   while (opcion == 1 && sala.getDisponibles() > 0);
 }
