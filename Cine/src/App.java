@@ -6,12 +6,12 @@ public class App {
         Sala objSala = new Sala();
             
             
-        System.out.println("Bienvenido al SENA-CINE, por favor ingrese sus datos.");
+        
 
         while (objSala.getDisponibles() > 0) {
-            
+        System.out.println("Bienvenido al SENA-CINE, por favor ingrese sus datos.");
         System.out.println("Ingrese su nombre");
-        String nombre = sc.next();
+        String nombre = sc.nextLine();
         System.out.println("Ingrese su documento");
         int doc = sc.nextInt();
 
@@ -29,6 +29,7 @@ public class App {
         System.out.println("Ingrese 3 si desea finalizar reserva.");
         System.out.println("Ingrese 4 para salir del sistema");
         opcion = sc.nextInt();
+        sc.nextLine();
 
         switch (opcion) {
             case 1:
@@ -41,7 +42,7 @@ public class App {
             System.out.println("reserva realizada, hasta una proxima");
                 break;
             case 4:
-            System.out.println("reserva realizada, hasta una proxima");
+            System.out.println("hasta una proxima");
             sc.close();
                 return;
             default:

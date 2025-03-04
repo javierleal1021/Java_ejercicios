@@ -33,5 +33,6 @@ public class App {
 
     } while (opcion == 1);
         System.out.println("FIN DEL JUEGO");    
+        sc.close();
     }
 }
