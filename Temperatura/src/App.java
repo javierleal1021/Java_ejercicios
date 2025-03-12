@@ -1,7 +1,13 @@
 import java.util.Scanner;
 
+
+
 public class App {
+
+   private static String[] listaNombre_clientes;
+    
     public static void main(String[] args) throws InterruptedException {
+
         Scanner sc = new Scanner(System.in);
         int opcion;
 
